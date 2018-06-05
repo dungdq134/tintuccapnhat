@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llNews"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/background_with_shadow"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/ivThumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ivThumbnail_height"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+        <ProgressBar
+            android:id="@+id/image_progress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:indeterminate="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#000"
+            android:textSize="@dimen/tvTitle_fontsize" />
+
+        <TextView
+            android:id="@+id/tvSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:textColor="#000"
+            android:textSize="@dimen/tvSummary_fontsize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/tvAuthor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:textSize="@dimen/tvSummary_fontsize"
+            android:textStyle="bold" />
+
+        <!--
+        <ImageView 
+       	    android:id="@+id/ivFavorite"
+       	    android:layout_width="30dp"
+       	    android:layout_height="30dp"
+       	    android:adjustViewBounds="true"
+       	    android:scaleType="fitXY"
+       	    android:layout_gravity="center_vertical|right"
+       	    android:src="@drawable/ic_not_bookmark"
+       	    android:layout_marginLeft="10dp"/>
+        
+        <ImageView 
+            android:id="@+id/ivFacebook"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_share"
+            android:layout_marginLeft="10dp"/>
+        -->
+
+    </LinearLayout>
+
+</LinearLayout>

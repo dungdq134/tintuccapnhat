@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <dimen name="lv_navigation_menu_width">240dp</dimen>
+    
+    <dimen name="ivThumbnail_height">150dp</dimen>
+    
+    <dimen name="drawer_fontsize">15sp</dimen>
+    
+    <dimen name="header_navigation_height">150dp</dimen>
+    
+    <dimen name="tvTitle_fontsize">20sp</dimen>
+    <dimen name="tvSummary_fontsize">12sp</dimen>
+
+</resources>

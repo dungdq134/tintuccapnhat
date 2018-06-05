@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tin hot 24h</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_share">Share</string>
+    <string name="action_bookmark">Bookmark</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="banner_ad_unit_id">ca-app-pub-8350803360796499/1734686965</string>
+    <string name="banner_ad_fullscreen_unit_id">ca-app-pub-8350803360796499/3211420165</string>
+    
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item ></item>
+        <item >Điểm tin</item>
+        <item >Tin ưa thích</item>
+        <item >Góp ý</item>
+        <item >Mời bạn bè</item>
+        <item >Đánh giá</item>
+    </string-array>
+    
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item></item>
+        <item>@drawable/ic_action_event</item>
+        <item>@drawable/ic_favorite</item>
+        <item>@drawable/ic_action_email</item>
+        <item>@drawable/ic_action_fb</item>
+        <item>@drawable/ic_rating</item>
+    </array>
+    
+    <string name="not_net_work">Không có kết nối mạng!</string>
+    <string name="net_work">Có kết nối mạng!</string>
+    
+    <string name="alert_error">Có lỗi trong quá trình tải dữ liệu \nTrượt xuống để tải lại</string>
+    <string name="alert_bookmark">Chưa có tin ưa thích nào được đánh dấu</string>
+    <string name="bookmark">Đã thêm vào Tin ưa thích</string>
+    <string name="unbookmark">Đã xóa khỏi Tin ưa thích</string>
+    
+    <!-- Rate app -->
+    <string name="rate_app_message">Hãy vote 5* để ủng hộ mình nhé</string>
+    
+    <!-- Notification -->
+    <string name="notification_morning">Chào buổi sáng, đọc vài tờ báo để bắt đầu ngày mới nào</string>
+    <string name="notification_afternoon">Buổi chiều làm việc vui vẻ, hãy dành chút thời gian đọc báo nào</string>
+    <string name="notification_evening">Tối muộn rồi, có vài tin hot cuối ngày có thể bạn muốn đọc</string>
+    
+    <string name="success">Success!</string>
+    
+    <string name="facebook_id">572708342837967</string>
+
+</resources>
