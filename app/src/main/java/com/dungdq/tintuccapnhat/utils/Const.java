@@ -1,9 +1,9 @@
 package com.dungdq.tintuccapnhat.utils;
 
 public class Const {
-//	public static String urlAPI = "https://api.recsys.opera.com/api/1.0/suggestions/list?count=10&country=vn&language=vi&vcat=vn%3Avi%3A0%2F6&vco=0%2F19";
+	public static String urlAPI = "https://api.recsys.opera.com/api/1.0/suggestions/list?count=10&country=vn&language=vi";
 	
-	public static String urlAPI = "https://tinhot24h.firebaseio.com/opera.json";
+//	public static String urlAPI = "https://tinhot24h.firebaseio.com/opera.json";
 
 	public static String urlParser = "https://readability.com/api/content/v1/parser?token=07e298ca25db2e52f54aa39f07607eb6c25c2034&url=";
 

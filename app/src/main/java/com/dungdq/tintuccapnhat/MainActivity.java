@@ -68,8 +68,8 @@ public class MainActivity extends AppCompatActivity {
 		if (mDrawerLayout.isDrawerOpen(mDrawerList)) {
 			mDrawerLayout.closeDrawer(mDrawerList);
 		} else {
-//			MainActivity.this.finish();
-			this.onBackPressed();
+			MainActivity.this.finish();
+//			this.onBackPressed();
 //			System.exit(0);
 		}
 	}
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
 		// Start service notification
 		startService(new Intent(MainActivity.this, NotificationService.class));
 		
-		Utils.getKeyHash(MainActivity.this);
+//		Utils.getKeyHash(MainActivity.this);
 		mSimpleFacebook = SimpleFacebook.getInstance(this);
 		
 		// Display full screen banner ad
@@ -177,7 +177,7 @@ public class MainActivity extends AppCompatActivity {
 		mDrawerList.setAdapter(adapter);
 
 		// enabling action bar app icon and behaving it as toggle button
-//		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 //		getSupportActionBar().setHomeButtonEnabled(true);
 //		getSupportActionBar().setElevation(0); // Remove shadow below actionbar
 

@@ -83,7 +83,7 @@
 
         <service
             android:name="com.dungdq.tintuccapnhat.services.NotificationService"
-            android:enabled="true" />
+            android:enabled="false" />
     </application>
 
 </manifest>

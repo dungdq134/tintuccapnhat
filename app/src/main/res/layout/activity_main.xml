@@ -1,32 +1,29 @@
 <!-- A DrawerLayout is intended to be used as the top-level content view using match_parent for both width and height to consume the full space available. -->
-<LinearLayout 
+<!--<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_parent_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:fitsSystemWindows="true">
-    
-    <android.support.v7.widget.Toolbar
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/my_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="?attr/actionBarSize"
-        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    android:fitsSystemWindows="true">-->
     
     <android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.vtvcab.epg.MainActivity" >
+    android:fitsSystemWindows="true">
 
     <!--
          As the main content view, the view below consumes the entire
          space available using match_parent in both dimensions.
     -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <FrameLayout
         android:id="@+id/container"
@@ -65,6 +62,17 @@
          the container.
     -->
 
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </RelativeLayout>
+
     <ListView
         android:id="@+id/lv_navigation_menu"
         android:layout_width="@dimen/lv_navigation_menu_width"
@@ -79,5 +87,5 @@
 
 </android.support.v4.widget.DrawerLayout>
     
-</LinearLayout>
+<!--</LinearLayout>-->
 

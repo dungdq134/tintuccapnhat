@@ -209,8 +209,8 @@ public class HomeFragment extends Fragment implements OnRefreshListener {
 	                    Log.e("...", "Last Item Wow !");
 	                    i++;
 	                    progressBar.setVisibility(View.VISIBLE);
-	                    apiGetTinTuc(urlAPI + category + "&page=" + i); 
-	                    Log.e("link", urlAPI + category + "&page=" + i);
+	                    apiGetTinTuc(Const.urlAPI + category + "&page=" + i);
+	                    Log.e("link", Const.urlAPI + category + "&page=" + i);
 	                }
 	            }
 			}
@@ -219,8 +219,9 @@ public class HomeFragment extends Fragment implements OnRefreshListener {
 //		apiGetTinTuc(Const.urlAPI + category);
 //		Log.e("link", Const.urlAPI + category);
 		
-		getUrlAPI(Const.urlAPI);
-		
+//		getUrlAPI(Const.urlAPI);
+		apiGetTinTuc(Const.urlAPI + category);
+
 		return rootView;
 	}
 	
@@ -325,7 +326,7 @@ public class HomeFragment extends Fragment implements OnRefreshListener {
 
 	@Override
 	public void onRefresh() {
-		apiGetTinTuc(urlAPI + category);
+		apiGetTinTuc(Const.urlAPI + category);
 		tvError.setVisibility(View.GONE);
 	}
 }
